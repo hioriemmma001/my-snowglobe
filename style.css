@@ -1,0 +1,135 @@
+:root {
+  --bg-gradient-start: #e0f2fe;
+  --bg-gradient-end: #f8fafc;
+  --primary-color: #1e3a8a;
+  --accent-color: #e11d48;
+  --accent-hover: #be123c;
+  --card-bg: #ffffff;
+  --text-color: #1e293b;
+}
+body {
+    margin: 0;
+    color: #162d4f;
+    background: linear-gradient(#e6f4ff, #ffffff);
+    font-family: "Libre Caslon Text" , Georgia, serif;
+}
+
+h1{
+    color:#235fd4;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tagline{
+    color: #df5034;
+    margin-top: 0;
+}
+
+.hero {
+    padding:3rem 1rem 1rem;
+    text-align: center;
+}
+
+main{
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 0 1rem 4rem;
+}
+
+.globe-card {
+    background: #fdf7e8;
+    border: 6px solid #235fd4;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+#message {
+    font-style: italic;
+    text-align: center;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.globe{
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 25% , #ffffff, #cfe6ff 65%, #9dc4ef);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: inset -5px -5px 15px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.scene{
+    width: 78%;
+    height: 75%;
+    z-index: 1;
+}
+
+.snowflakes {
+    position:absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.snowflake {
+  position: absolute;
+  top: -15%;
+  color: #ffffff;
+  opacity: 0.8;
+  animation: fall linear infinite;
+}
+
+.snowflake:nth-child(1) {left:15%; font-size: 1rem;animation-duration: 3s; animation-delay: 0s; }
+.snowflake:nth-child(2) {left:35%; font-size: 0.75rem;animation-duration: 4s; animation-delay: 1s; }
+.snowflake:nth-child(3) {left:55%; font-size: 1.1rem;animation-duration: 2.5s; animation-delay: 0.5s; }
+.snowflake:nth-child(4) {left:75%; font-size: 0.6rem;animation-duration: 3.5s; animation-delay: 1.5s; }
+.snowflake:nth-child(5) {left:88%; font-size: 0.9rem;animation-duration: 4.5s; animation-delay: 0.2s; }
+
+@keyframes fall {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(14rem) rotate(360deg); opacity: 0.2; }
+}
+
+button{
+    font: inherit;
+    color: #ffffff;
+    background: #df5034;
+    border: none;
+    padding: 0.75rem 1.5rem ;
+    cursor: pointer;
+    transition: background 150ms ease, transform 150ms ease;
+}
+
+button:hover{
+    background: #a43835;
+    transform: scale(1.05);
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0) rotate(0deg);}
+    20% {transform: translateX(-0.6rem) rotate(-4deg);}
+    40% {transform: translateX(0.6rem) rotate(4deg);}
+    60% {transform: translateX(-0.4rem) rotate(-2deg);}
+    80% {transform: translateX(0.4rem) rotate(2deg);}
+}
+
+.globe.shaking {
+    animation: shake 600ms ease;
+}
+
+footer{
+    text-align: center;
+    color: #64748b;
+    font-size: 0.875rem;
+}
