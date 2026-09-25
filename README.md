@@ -1,16 +1,15 @@
-# My Snowglobe ❄️
+# Super Mario 2D Game
 
-An interactive, web-based snowglobe project built with HTML, CSS, and JavaScript. 
+A small platformer game made with Godot, inspired by classic Super Mario levels. 
 
-## 📌 Features
-* **Interactive Elements:** Features custom CSS/JS visual animations inside a 3D-styled glass globe.
-* **Responsive Layout:** Optimized for clean viewing across desktop and mobile screens.
-* **Lightweight Build:** Pure front-end code with zero heavy external dependencies.
+## About the Project
+I built this game to practice making 2D platformers in Godot. It features basic movement, platforms, and a retro style. 
 
-## 🚀 Live Demo
-Check out the live interactive page on GitHub Pages:
-[Demo Link](https://hioriemmma001.github.io/my-snowglobe/)
+## How to Play / Run
+1. Download or clone this repository.
+2. Open the project folder in **Godot Engine** (v4.x).
+3. Click the **Play** button in the top right.
 
-## 🛠️ How to Run Locally
-1. Clone this repository:
-   ```bash
+## Built With
+* Godot Engine
+* 
