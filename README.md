@@ -1,15 +1,11 @@
-# Super Mario 2D Game
+# Snowglobe Web Project
 
-A small platformer game made with Godot, inspired by classic Super Mario levels. 
+A small interactive web app of a snowglobe built with HTML, CSS, and JavaScript.
 
-## About the Project
-I built this game to practice making 2D platformers in Godot. It features basic movement, platforms, and a retro style. 
+## What it does
+* Interactive page elements with custom CSS and JavaScript animations inside a glass globe look.
+* Works on both desktop and mobile screens.
 
-## How to Play / Run
-1. Download or clone this repository.
-2. Open the project folder in **Godot Engine** (v4.x).
-3. Click the **Play** button in the top right.
-
-## Built With
-* Godot Engine
-* 
+## Running it locally
+1. Clone or download this repo.
+2. Open `index.html` in any web browser to see it work.
